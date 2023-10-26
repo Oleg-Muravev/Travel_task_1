@@ -1,0 +1,77 @@
+http://www.plantuml.com/plantuml/
+
+class Client{
+-__surname
+-__name
+-__middlename
+-__address
+-__phone
++setSurname()
++setName()
++setMiddlename()
++setAddress()
++setPhone()
++getSurname()
++getName()
++getMiddlename()
++getAddress()
++getPhone()
++getClientStr()
+}
+
+class GeneralList{
+-__list
++clear()
++getItems()
++appendItem()
++removeItem()
++getStr()
+}
+
+class Packages{
+-__date
+-__quantity
+-__discount
++setDate()
++setQuantity()
++setDiscount()
++appendClient()
++removeClient()
++appendRoute()
++removeRoute()
++getPackageStr()
+}
+
+class Routes{
+-__country
+-__climat
+-__duration
+-__hotel
+-__cost
++setCountry()
++setClimat()
++setDuration()
++setHotel()
++setCost()
++getCountry()
++getClimat()
++getDuration()
++getHotel()
++getCost()
++getRouteStr()
+}
+
+class ClientList{
++getStr()
+}
+
+class RouteList{
++getStr()
+}
+
+RouteList o-u- Routes
+GeneralList <|-- RouteList
+GeneralList <|-- ClientList
+Packages o-u- ClientList
+Packages o-u- RouteList
+ClientList o-u- Client
