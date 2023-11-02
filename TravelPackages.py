@@ -1,6 +1,6 @@
 from ClientList import ClientList
 from RouteList import RouteList
-class Packages: # ѕутЄвка
+class Packages: 
     def __init__(self, date='', quantity=0, discount=0):
         self.__clientList = ClientList()
         self.__routeList = RouteList()

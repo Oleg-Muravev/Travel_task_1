@@ -1,4 +1,4 @@
-class Routes: # Маршрут
+class Routes: 
     def __init__(self, country='', climate='', duration=0, hotel='', cost=0):
         self.setCountry(country)
         self.setClimate(climate)
